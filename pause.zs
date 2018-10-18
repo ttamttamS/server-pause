@@ -12,7 +12,7 @@ import mods.ctutils.commands.Commands;
 
 
 events.onPlayerLoggedIn(function(event) {
-		val tickRateActive = "20";
+		val tickRateActive = "20"; //change this to the tickrate you want when players are online. 0 will break your server.
 		val serverSender = Commands.getServerCommandSender();
 		print("[pause.zs] SOMEONE HAS LOGGED IN!");
 		var players = Server.getCurrentPlayerCount(server);
@@ -24,7 +24,7 @@ events.onPlayerLoggedIn(function(event) {
 });
 
 events.onPlayerLoggedOut(function(event) {
-		val tickRateIdle = "0.2777";
+		val tickRateIdle = "0.2777"; //change this to the tickrate you want when players are offline. 0 will break your server.
 		val serverSender = Commands.getServerCommandSender();
 		print("[pause.zs] SOMEONE HAS LOGGED OUT!");
 		var players = Server.getCurrentPlayerCount(server);
